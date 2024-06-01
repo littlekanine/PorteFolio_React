@@ -1,13 +1,13 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from '../../pages/Home';
 
-function Routes() {
+function CustomRoutes() {
 	return (
 		<Routes>
-			<Route path="/" element={<Home />}></Route>
+			<Route path="/" element={<Home />} />
 		</Routes>
 	);
 }
 
-export default Routes;
+export default CustomRoutes;

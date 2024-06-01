@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import initScrollReveal from '../scripts/scrollReveal';
 import Herro from '../component/herroBanner/HerroBanner';
+import Pdp from '../asset/img/mwa.jpg';
+import Projects from '../component/project/Projects';
 
 function Home() {
+	useEffect(() => {
+		initScrollReveal();
+	}, []);
 	return (
 		<div>
 			<div id="top"></div>
@@ -11,7 +17,7 @@ function Home() {
 					<div className="row about-wrapper">
 						<div className="col-md-6 col-sm-12">
 							<div className="about-wrapper__image load-hidden">
-								{/* <img alt="Profile Image" className="img-fluid rounded shadow-lg" height="auto" width="300px" src="assets/mwa.jpg" /> */}
+								<img src={Pdp} alt="Profile Image" className="img-fluid rounded shadow-lg" height="auto" width="300px" />
 							</div>
 						</div>
 						<div className="col-md-6 col-sm-12">
@@ -22,12 +28,12 @@ function Home() {
 								</p>
 								<p className="about-wrapper__info-text">Curiosity brings knowledge</p>
 								<div className="social-links">
-									{/* <a
+									<a
 										href="https://www.linkedin.com/in/elia-kopff-16064b228/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=fr"
 										target="_blank"
 									>
 										<i className="fab fa-linkedin fa-inverse icon"></i>
-									</a> */}
+									</a>
 									<a href="https://github.com/littlekanine">
 										<i className="fab fa-brands fa-github icon"></i>
 									</a>
@@ -41,16 +47,7 @@ function Home() {
 				</div>
 			</section>
 
-			<section id="projects">
-				<div className="container">
-					<div className="project-wrapper">
-						<h2 className="section-title dark-blue-text">Projects</h2>
-						<div className="wrapper">
-							<div className="items" id="project-items"></div>
-						</div>
-					</div>
-				</div>
-			</section>
+			<Projects />
 
 			<section id="contact">
 				<div className="container">
