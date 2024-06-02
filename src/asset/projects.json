@@ -1,12 +1,25 @@
 [
 	{
-		"id": 0,
-		"nom": "Portefolio Sophie Bluel",
-		"img": "../Sophie_Bluel.png"
-	},
-	{
 		"id": 1,
 		"nom": "Portefolio Sophie Bluel",
-		"img": "../asset/img/Sophie_Bluel.png"
+		"img": "sophie-bluel.png",
+		"langages": ["html5", "css3", "react"],
+		"website": "https://fontawesome.com/search?q=database&o=r",
+		"gitHubSite": "https://github.com/littlekanine/P6_Sophie_Bluel",
+		"iconSite": "globe",
+		"gitHub": "gitHub",
+		"description": "Pouet pouet c'est simpas"
+	},
+	{
+		"id": 2,
+		"nom": "Kasa",
+		"img": "logoKasa.png",
+		"langages": ["html5", "css3", "react"]
+	},
+	{
+		"id": 3,
+		"nom": "Argent-Bank",
+		"img": "bank-tree.jpeg",
+		"langages": ["html5", "css3", "react", "MongoDB"]
 	}
 ]
