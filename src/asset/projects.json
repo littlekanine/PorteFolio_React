@@ -14,12 +14,22 @@
 		"id": 2,
 		"nom": "Kasa",
 		"img": "logoKasa.png",
-		"langages": ["html5", "css3", "react"]
+		"langages": ["html5", "css3", "react"],
+		"website": "https://fontawesome.com/search?q=database&o=r",
+		"gitHubSite": "https://github.com/littlekanine/P6_Sophie_Bluel",
+		"iconSite": "globe",
+		"gitHub": "gitHub",
+		"description": "Pouet pouet c'est simpas"
 	},
 	{
 		"id": 3,
 		"nom": "Argent-Bank",
 		"img": "bank-tree.jpeg",
-		"langages": ["html5", "css3", "react", "MongoDB"]
+		"langages": ["html5", "css3", "react", "MongoDB"],
+		"website": "https://fontawesome.com/search?q=database&o=r",
+		"gitHubSite": "https://github.com/littlekanine/P6_Sophie_Bluel",
+		"iconSite": "globe",
+		"gitHub": "gitHub",
+		"description": "Pouet pouet c'est simpas"
 	}
 ]

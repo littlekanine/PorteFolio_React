@@ -3,6 +3,7 @@ import initScrollReveal from '../scripts/scrollReveal';
 import Herro from '../component/herroBanner/HerroBanner';
 import Pdp from '../asset/img/mwa.jpg';
 import Projects from '../component/project/Projects';
+import CardsStack from '../component/cardsStack/CardsStacks';
 
 function Home() {
 	useEffect(() => {
@@ -48,6 +49,7 @@ function Home() {
 			</section>
 
 			<Projects />
+			<CardsStack />
 
 			<section id="contact">
 				<div className="container">

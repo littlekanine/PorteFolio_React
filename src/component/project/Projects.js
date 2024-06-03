@@ -1,19 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ProjectsData from '../../asset/projects.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3Alt, faJs, faReact, faSass, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faDatabase, faGlobe } from '@fortawesome/free-solid-svg-icons';
-
-const iconMap = {
-	html5: faHtml5,
-	css3: faCss3Alt,
-	SASS: faSass,
-	MongoDB: faDatabase,
-	js: faJs,
-	react: faReact,
-	globe: faGlobe,
-	gitHub: faGithub,
-};
+import IconMap from '../iconMap/IconMap';
 
 function Projects() {
 	const [expandedProjectId, setExpandedProjectId] = useState(null);
@@ -24,9 +12,13 @@ function Projects() {
 
 	const handleClickOutside = (event) => {
 		const project = document.querySelector(`.item.clicked`);
+		const projectInfo = document.querySelector(`.project-info`);
+		const projectInfoLeft = document.querySelector(`.project-info-left`);
 		if (project && !project.contains(event.target)) {
 			project.classList.remove('clicked', 'expanded');
 			setExpandedProjectId(null);
+			projectInfo.classList.add('hidden');
+			projectInfoLeft.classList.add('hidden');
 		}
 	};
 
@@ -53,12 +45,13 @@ function Projects() {
 					<div className="project-wrapper">
 						<h2 className="section-title dark-blue-text">Projects</h2>
 						<div className="wrapper">
-							<div className="items" id="project-items">
+							<div className="items about-wrapper__image load-hidden" id="project-items">
 								{ProjectsData.map((project) => {
 									const imagePath = require(`../../asset/img/${project.img}`);
+									const isClicked = project.id === expandedProjectId;
 									return (
 										<div
-											className={`item ${project.id === expandedProjectId ? 'clicked' : ''}`}
+											className={`item ${isClicked ? 'clicked' : ''} ${expandedProjectId && !isClicked ? 'opacity' : ''}`}
 											key={project.id}
 											onClick={() => handleProjectClick(project.id)}
 											role="button"
@@ -68,11 +61,10 @@ function Projects() {
 											data-project-id={project.id}
 										>
 											<div className="project-info" id="info">
-												<h1 className="titre-project">{project.nom}</h1>
 												<p>language used : </p>
 												<div className="language-icons">
 													{(project.langages || []).map((lang, index) => (
-														<FontAwesomeIcon key={index} icon={iconMap[lang]} />
+														<FontAwesomeIcon key={index} icon={IconMap[lang]} />
 													))}
 												</div>
 												<div className="link">
@@ -85,7 +77,7 @@ function Projects() {
 																rel="noopener noreferrer"
 																className="icons"
 															>
-																<FontAwesomeIcon icon={iconMap[project.iconSite]} />
+																<FontAwesomeIcon icon={IconMap[project.iconSite]} />
 															</a>
 														)}
 													</div>
@@ -98,11 +90,15 @@ function Projects() {
 																rel="noopener noreferrer"
 																className="icons"
 															>
-																<FontAwesomeIcon icon={iconMap[project.gitHub]} />
+																<FontAwesomeIcon icon={IconMap[project.gitHub]} />
 															</a>
 														)}
 													</div>
 												</div>
+											</div>
+											<div className="project-info-left" id="info">
+												<h1 className="titre-project">{project.nom}</h1>
+												<p>{project.description}</p>
 											</div>
 										</div>
 									);

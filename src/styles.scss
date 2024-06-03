@@ -17,6 +17,7 @@
 @import './sass/sections/contact';
 @import './sass/sections/hero';
 @import './sass/sections/projects';
+@import './component/cardsStack/cardsStacks.scss';
 
 .flex {
 	display: flex;
@@ -32,4 +33,8 @@
 
 .row {
 	flex-direction: row;
+}
+
+.opacity {
+	opacity: 0;
 }
