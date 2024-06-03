@@ -1,4 +1,5 @@
 import Buttons from '../buttons/Buttons';
+import { ArrowLeft, ArrowRight } from '../svgComponent/SvgComponent';
 
 function Herro() {
 	return (
@@ -14,7 +15,7 @@ function Herro() {
 					</h1>
 					<p class="hero-cta load-hidden">
 						<a rel="noreferrer" class="animated-button" href="#about">
-							<Buttons />
+							<Buttons message={'Know more'} SvgLeft={ArrowLeft} SvgRight={ArrowRight} />
 						</a>
 					</p>
 				</div>
