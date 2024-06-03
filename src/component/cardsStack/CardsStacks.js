@@ -29,7 +29,7 @@ function CardsStack() {
 									<h2 className="title-stack">{skill.nom}</h2>
 									<FontAwesomeIcon key={index} icon={IconMap[skill.logo]} className="icons-skill " />
 									<div className="progress-bar">
-										<div className="progress" style={{ width: getProgressWidth(skill.niveaux) }}></div>
+										<div className="progress skills-progress load-hidden" style={{ width: getProgressWidth(skill.niveaux) }}></div>
 									</div>
 								</div>
 							</div>

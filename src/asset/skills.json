@@ -2,26 +2,26 @@
 	{
 		"nom": "HTML",
 		"logo": "html5",
-		"niveaux": "Médium"
+		"niveaux": "medium"
 	},
 	{
 		"nom": "CSS",
 		"logo": "css3",
-		"niveaux": "Médium"
+		"niveaux": "medium"
 	},
 	{
 		"nom": "Javascript",
 		"logo": "js",
-		"niveaux": "Beginner"
+		"niveaux": "beginner"
 	},
 	{
 		"nom": "React",
 		"logo": "react",
-		"niveaux": "Beginner"
+		"niveaux": "beginner"
 	},
 	{
 		"nom": "MongoDB",
 		"logo": "MongoDB",
-		"niveaux": "Beginner"
+		"niveaux": "beginner"
 	}
 ]

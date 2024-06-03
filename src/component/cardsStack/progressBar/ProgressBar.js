@@ -2,7 +2,7 @@ const getProgressWidth = (level) => {
 	switch (level.toLowerCase()) {
 		case 'beginner':
 			return '25%';
-		case 'médium':
+		case 'medium':
 			return '50%';
 		case 'advanced':
 			return '75%';
