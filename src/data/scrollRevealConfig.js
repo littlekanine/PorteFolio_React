@@ -16,6 +16,30 @@ export const targetElements = [
 		},
 	},
 	{
+		element: '.section-title-project',
+		animation: {
+			delay: 2000,
+			distance: '0px',
+			origin: 'bottom',
+		},
+	},
+	{
+		element: '.section-project',
+		animation: {
+			delay: 2500,
+			distance: '0px',
+			origin: 'bottom',
+		},
+	},
+	{
+		element: '.section-cardStacks',
+		animation: {
+			delay: 1000,
+			distance: '0px',
+			origin: 'bottom',
+		},
+	},
+	{
 		element: '.hero-title',
 		animation: {
 			delay: 500,
@@ -40,6 +64,13 @@ export const targetElements = [
 		element: '.about-wrapper__info',
 		animation: {
 			delay: 1000,
+			origin: window.innerWidth > 768 ? 'left' : 'bottom',
+		},
+	},
+	{
+		element: '.about-wrapper__link',
+		animation: {
+			delay: 1500,
 			origin: window.innerWidth > 768 ? 'left' : 'bottom',
 		},
 	},

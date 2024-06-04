@@ -38,6 +38,10 @@
 		transform: rotate(90deg);
 	}
 
+	.enveloppe {
+		left: -25%;
+	}
+
 	.circle {
 		position: absolute;
 		top: 50%;
@@ -68,6 +72,10 @@
 		}
 
 		.arr-2 {
+			left: 16px;
+		}
+
+		.enveloppe {
 			left: 16px;
 		}
 

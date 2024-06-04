@@ -18,7 +18,7 @@ function About() {
 									<br />I want to create, improve, undertake.
 								</p>
 								<p className="about-wrapper__info-text">Curiosity brings knowledge</p>
-								<div className="social-links">
+								<div className="social-links about-wrapper__link">
 									<a
 										href="https://www.linkedin.com/in/elia-kopff-16064b228/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=fr"
 										target="_blank"

@@ -43,9 +43,9 @@ function Projects() {
 			<section id="projects">
 				<div className="container">
 					<div className="project-wrapper">
-						<h2 className="section-title dark-blue-text">Projects</h2>
+						<h2 className="section-title dark-blue-text section-title-project">Projects</h2>
 						<div className="wrapper">
-							<div className="items about-wrapper__image load-hidden" id="project-items">
+							<div className="items section-project load-hidden" id="project-items">
 								{ProjectsData.map((project) => {
 									const imagePath = require(`../../asset/img/${project.img}`);
 									const isClicked = project.id === expandedProjectId;

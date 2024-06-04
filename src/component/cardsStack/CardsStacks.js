@@ -22,7 +22,7 @@ function CardsStack() {
 			<section className="card-section">
 				<h1 className="section-title">Skills</h1>
 				{chunkedSkills.map((row, rowIndex) => (
-					<div className="card-stack about-wrapper__image load-hidden" key={rowIndex}>
+					<div className="card-stack section-cardStacks load-hidden" key={rowIndex}>
 						{row.map((skill, index) => (
 							<div className="card-contain " key={index}>
 								<div className="card">
