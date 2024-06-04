@@ -31,6 +31,7 @@ export const targetElements = [
 			origin: 'bottom',
 		},
 	},
+
 	{
 		element: '.section-cardStacks',
 		animation: {

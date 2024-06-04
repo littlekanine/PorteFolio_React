@@ -14,25 +14,41 @@
 .modal {
 	display: flex;
 	position: fixed;
-	top: 25%;
-	left: 25%;
-	width: 50%;
-	height: 50%;
+	top: 15%;
+	left: 10%;
+	width: 80%;
+	height: 70%;
 	background-color: white;
 	padding: 5px;
 	border-radius: 10px;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Ombre */
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 	flex-direction: column;
+	overflow: auto;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	opacity: 0; /* Définir l'opacité initiale à 0 */
+	transform: scale(0.8); /* Réduire l'échelle initiale */
+	transition: opacity 0.3s ease, transform 0.3s ease; /* Ajouter une transition */
 }
 
+.modal-overlay.modal-open .modal {
+	opacity: 1; /* Modifier l'opacité lorsqu'ouvert */
+	transform: scale(1); /* Agrandir l'échelle lorsqu'ouvert */
+}
 .modal-content {
 	width: 100%;
 	height: 100%;
 	display: flex;
-	// justify-content: center;
+	padding: 20px;
 	align-items: center;
 	margin-bottom: 20px;
 	border: none;
+}
+
+.description-item {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 10px;
 }
 
 .modal-header {
@@ -73,4 +89,27 @@
 
 .modal-close:hover {
 	color: #999; /* Couleur de la croix au survol */
+}
+
+.text-modal {
+	font-size: 13px;
+}
+
+.link-modal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 10px;
+	gap: 20%;
+}
+
+.link-spec-modal {
+	display: flex;
+	font-size: 16px;
+	gap: 10px;
+}
+
+.icons {
+	color: $primary-color;
 }

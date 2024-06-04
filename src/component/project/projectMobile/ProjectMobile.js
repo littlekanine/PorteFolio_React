@@ -18,11 +18,12 @@ function ProjectsMobile() {
 
 	return (
 		<>
+			<h2 className="section-title section-title-project dark-blue-text section-title-project-mobile">Projects</h2>;
 			<Carousel>
 				{ProjectsData.map((project) => {
 					const imagePath = require(`../../../asset/img/${project.img}`);
 					return (
-						<div className="carrousel" key={project.id}>
+						<div className="carrousel section-project load-hidden" key={project.id}>
 							<div className="carrousel-list">
 								<div className="carousel-item shadow" onClick={() => openModal(project)} role="button" tabIndex="0">
 									<img

@@ -9,14 +9,15 @@
 	padding-bottom: 6%;
 	padding-top: 2%;
 
-	@include respond(tab-land) {
-		height: 100vh;
-	}
+	// @include respond(tab-land) {
+	// 	height: 100vh;
+	// }
 
 	@media (max-width: 900px) {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		clip-path: none;
 	}
 
 	.about-wrapper {
@@ -34,11 +35,10 @@
 				height: 100%;
 			}
 			@include respond(tab-port-sm) {
-				padding-bottom: 6.4rem;
+				padding-bottom: 2rem;
 			}
 		}
 		@media (max-width: 768px) {
-			// Styles spécifiques à .about-wrapper pour les écrans de petite taille vont ici
 			padding-bottom: 2.5rem;
 		}
 		&__info {

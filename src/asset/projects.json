@@ -8,7 +8,11 @@
 		"gitHubSite": "https://github.com/littlekanine/P6_Sophie_Bluel",
 		"iconSite": "globe",
 		"gitHub": "gitHub",
-		"description": "Pouet pouet c'est simpas"
+		"description": [
+			"Gestion des événements utilisateurs avec JavaScript",
+			"Manipulation des éléments du DOM avec JavaScript",
+			"Récupération des données utilisateurs dans le JavaScript via des formulaires"
+		]
 	},
 	{
 		"id": 2,
@@ -19,7 +23,11 @@
 		"gitHubSite": "https://github.com/littlekanine/P6_Sophie_Bluel",
 		"iconSite": "globe",
 		"gitHub": "gitHub",
-		"description": "Pouet pouet c'est simpas"
+		"description": [
+			"Configuration de la navigation entre les pages de l'application avec React Router",
+			"Développement des éléments de l'interface du site web grâce à des composants React",
+			"Mise en œuvre des animations CSS"
+		]
 	},
 	{
 		"id": 3,
@@ -30,6 +38,10 @@
 		"gitHubSite": "https://github.com/littlekanine/P6_Sophie_Bluel",
 		"iconSite": "globe",
 		"gitHub": "gitHub",
-		"description": "Pouet pouet c'est simpas"
+		"description": [
+			"Affichage des données du back end sur l'interface via des appels API",
+			"Configuration des routes API pour la communication client / serveur",
+			"Implémentation de la gestion des données avec Redux pour assurer le fonctionnement du front"
+		]
 	}
 ]
