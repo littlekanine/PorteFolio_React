@@ -13,11 +13,11 @@ function Herro() {
 						<br />
 						I'm Web Develloper.
 					</h1>
-					<p class="hero-cta load-hidden">
+					<div class="hero-cta load-hidden">
 						<a rel="noreferrer" class="animated-button" href="#about">
 							<Buttons message={'Know more'} SvgLeft={ArrowLeft} SvgRight={ArrowRight} />
 						</a>
-					</p>
+					</div>
 				</div>
 			</section>
 		</div>

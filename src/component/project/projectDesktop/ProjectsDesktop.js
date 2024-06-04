@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import ProjectsData from '../../asset/projects.json';
+import ProjectsData from '../../../asset/projects.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import IconMap from '../iconMap/IconMap';
+import IconMap from '../../iconMap/IconMap';
 
 function Projects() {
 	const [expandedProjectId, setExpandedProjectId] = useState(null);
@@ -47,7 +47,7 @@ function Projects() {
 						<div className="wrapper">
 							<div className="items section-project load-hidden" id="project-items">
 								{ProjectsData.map((project) => {
-									const imagePath = require(`../../asset/img/${project.img}`);
+									const imagePath = require(`../../../asset/img/${project.img}`);
 									const isClicked = project.id === expandedProjectId;
 									return (
 										<div

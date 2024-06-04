@@ -8,7 +8,7 @@
 @import './sass/base/typography';
 
 @import './component/buttons/buttons';
-@import './component/project/project';
+@import './component/project/projectDesktop/project';
 
 @import './sass/layout/footer';
 @import './sass/layout/sections';
@@ -20,6 +20,8 @@
 @import './component/cardsStack/cardsStacks.scss';
 @import './component/cardsStack/progressBar/progressBar.scss';
 @import './component/contactForm/contactForm.scss';
+@import './component/project/projectMobile/projectMobile.scss';
+@import './component//project//projectMobile/modalMobile/modalMobile.scss';
 
 .flex {
 	display: flex;

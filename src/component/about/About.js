@@ -8,7 +8,7 @@ function About() {
 					<div className="row about-wrapper">
 						<div className="col-md-6 col-sm-12">
 							<div className="about-wrapper__image load-hidden">
-								<img src={Pdp} alt="Profile Image" className="img-fluid rounded shadow-lg" height="auto" width="300px" />
+								<img src={Pdp} alt="Profile Image" className="img-fluid rounded shadow-lg" />
 							</div>
 						</div>
 						<div className="col-md-6 col-sm-12">

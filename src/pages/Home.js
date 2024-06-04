@@ -2,9 +2,10 @@ import React, { useEffect } from 'react';
 import initScrollReveal from '../scripts/scrollReveal';
 import Herro from '../component/herroBanner/HerroBanner';
 import About from '../component/about/About';
-import Projects from '../component/project/Projects';
+// import Projects from '../component/project/projectDesktop/Projects';
 import ContactForm from '../component/contactForm/ContactForm';
 import CardsStack from '../component/cardsStack/CardsStacks';
+import ResponsiveProjects from '../component/project/ResponsiveProjects';
 
 function Home() {
 	useEffect(() => {
@@ -15,7 +16,7 @@ function Home() {
 			<div id="top"></div>
 			<Herro />
 			<About />
-			<Projects />
+			<ResponsiveProjects />
 			<CardsStack />
 			<ContactForm />
 
