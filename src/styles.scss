@@ -1,0 +1,44 @@
+@import './sass/vendors/bootstrap.scss';
+
+@import './sass/abstracts/mixins';
+@import './sass/abstracts/variables';
+@import './sass/abstracts/helpers';
+
+@import './sass/base/base';
+@import './sass/base/typography';
+
+@import './component/buttons/buttons';
+@import './component/project/projectDesktop/project';
+
+@import './sass/layout/footer';
+@import './sass/layout/sections';
+
+@import './sass/sections/about';
+@import './sass/sections/contact';
+@import './sass/sections/hero';
+@import './sass/sections/projects';
+@import './component/cardsStack/cardsStacks.scss';
+@import './component/cardsStack/progressBar/progressBar.scss';
+@import './component/contactForm/contactForm.scss';
+@import './component/project/projectMobile/projectMobile.scss';
+@import './component//project//projectMobile/modalMobile/modalMobile.scss';
+
+.flex {
+	display: flex;
+}
+
+.center {
+	justify-content: center;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.row {
+	flex-direction: row;
+}
+
+.opacity {
+	opacity: 0;
+}
