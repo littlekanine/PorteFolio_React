@@ -77,6 +77,7 @@ function Projects() {
 																rel="noopener noreferrer"
 																className="icons"
 															>
+																<span className="text-hidden">Link media</span>
 																<FontAwesomeIcon icon={IconMap[project.iconSite]} />
 															</a>
 														)}
@@ -90,6 +91,7 @@ function Projects() {
 																rel="noopener noreferrer"
 																className="icons"
 															>
+																<span className="text-hidden">Link media</span>
 																<FontAwesomeIcon icon={IconMap[project.gitHub]} />
 															</a>
 														)}

@@ -4,17 +4,17 @@ import { ArrowLeft, ArrowRight } from '../svgComponent/SvgComponent';
 function Herro() {
 	return (
 		<div>
-			<section id="hero" class="jumbotron">
-				<div class="container">
-					<h1 class="hero-title load-hidden">
+			<section id="hero" className="jumbotron">
+				<div className="container">
+					<h1 className="hero-title load-hidden">
 						Welcom.
 						<br />
-						My name is <span class="text-color-main">Elia Kopff</span>
+						My name is <span className="text-color-main">Elia Kopff</span>
 						<br />
 						I'm Web Develloper.
 					</h1>
-					<div class="hero-cta load-hidden">
-						<a rel="noreferrer" class="animated-button" href="#about">
+					<div className="hero-cta load-hidden">
+						<a rel="noreferrer" className="animated-button" href="#about">
 							<Buttons message={'Know more'} SvgLeft={ArrowLeft} SvgRight={ArrowRight} />
 						</a>
 					</div>
