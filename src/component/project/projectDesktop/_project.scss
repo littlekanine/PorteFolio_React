@@ -22,7 +22,7 @@
 	perspective: calc(var(--index) * 35);
 
 	.item {
-		z-index: 1;
+		z-index: 9999;
 		width: calc(var(--index) * 5);
 		height: calc(var(--index) * 12);
 		background-color: #222;
@@ -154,6 +154,7 @@
 				transform: translateX(0%);
 			}
 		}
+
 		.project-info-left.hidden {
 			opacity: 0;
 			transition: opacity 0.5s ease;
@@ -170,7 +171,7 @@
 	}
 
 	.project-info .titre-project {
-		font-size: 18px;
+		font-size: 16px !important;
 	}
 
 	.item.expanded .project-info {
@@ -187,19 +188,20 @@
 		align-items: center;
 		flex-direction: column;
 		right: calc(100% + 10px);
+		text-align: left;
 	}
 
 	.item.clicked {
-		z-index: 2;
+		position: fixed;
+		top: 0%;
+		left: -70%;
+		transform: translate(-50%, -50%);
 		width: 40vw;
 		height: 30vh;
 		filter: inherit;
 		z-index: 100;
 		transform: none;
-		position: absolute;
-		top: 0%;
-		left: -65%;
-		transform-origin: top left;
+		transform-origin: center center;
 	}
 	.icons {
 		color: #f7df1e;
@@ -233,4 +235,8 @@
 
 .text-hidden {
 	display: none;
+}
+
+.description-list-desktop {
+	font-size: 12px;
 }

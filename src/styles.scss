@@ -22,23 +22,3 @@
 @import './component/contactForm/contactForm.scss';
 @import './component/project/projectMobile/projectMobile.scss';
 @import './component//project//projectMobile/modalMobile/modalMobile.scss';
-
-.flex {
-	display: flex;
-}
-
-.center {
-	justify-content: center;
-}
-
-.align-center {
-	align-items: center;
-}
-
-.row {
-	flex-direction: row;
-}
-
-.opacity {
-	opacity: 0;
-}

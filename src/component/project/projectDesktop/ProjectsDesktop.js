@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import IconMap from '../../iconMap/IconMap';
 
 function Projects() {
+	console.log('im in web');
 	const [expandedProjectId, setExpandedProjectId] = useState(null);
 
 	const handleProjectClick = (projectId) => {
@@ -61,7 +62,7 @@ function Projects() {
 											data-project-id={project.id}
 										>
 											<div className="project-info" id="info">
-												<p>language used : </p>
+												<h2>Language used </h2>
 												<div className="language-icons">
 													{(project.langages || []).map((lang, index) => (
 														<FontAwesomeIcon key={index} icon={IconMap[lang]} />
@@ -99,8 +100,14 @@ function Projects() {
 												</div>
 											</div>
 											<div className="project-info-left" id="info">
-												<h1 className="titre-project">{project.nom}</h1>
-												<p>{project.description}</p>
+												<h2 className="titre-project">{project.nom}</h2>
+												<ul className="description-list-desktop">
+													{project.description.map((desc, index) => (
+														<li key={index} className="description-item">
+															{desc}
+														</li>
+													))}
+												</ul>
 											</div>
 										</div>
 									);

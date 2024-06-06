@@ -1,10 +1,18 @@
+import React, { useState } from 'react';
 import Buttons from '../buttons/Buttons';
 import { ArrowLeft, ArrowRight } from '../svgComponent/SvgComponent';
+import ToggleModeButton from '../buttons/ToggleButton';
 
 function Herro() {
+	const [darkMode, setDarkMode] = useState(false);
+
+	const handleToggleMode = (newMode) => {
+		setDarkMode(newMode);
+	};
 	return (
 		<div>
-			<section id="hero" className="jumbotron">
+			<section id="hero" className={`jumbotron ${darkMode ? 'dark-mode' : ''}`}>
+				<ToggleModeButton onToggleMode={handleToggleMode} />
 				<div className="container">
 					<h1 className="hero-title load-hidden">
 						Welcom.

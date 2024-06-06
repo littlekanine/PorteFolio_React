@@ -7,6 +7,8 @@ function ResponsiveProjects() {
 	const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 769px)' });
 	const isTabletOrMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
+	console.log('size', isDesktopOrLaptop, isTabletOrMobile);
+
 	return (
 		<div>
 			{isDesktopOrLaptop && <DesktopProjects />}

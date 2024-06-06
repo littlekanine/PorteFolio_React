@@ -65,3 +65,16 @@
 		}
 	}
 }
+
+.toggle-button {
+	width: 10px;
+	height: 20px;
+	position: absolute;
+	top: 2%;
+	right: 2%;
+	background-color: $primary-color;
+}
+
+.moon {
+	position: fixed !important;
+}
