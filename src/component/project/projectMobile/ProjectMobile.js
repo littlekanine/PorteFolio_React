@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-3d-carousel';
 import ProjectsData from '../../../asset/projects.json';
 import Modal from './modalMobile/ModalMobile'; // Importez votre composant Modal
+import initScrollReveal from '../../../scripts/scrollReveal';
 
 function ProjectsMobile() {
-	console.log('im in mobile');
 	const [selectedProject, setSelectedProject] = useState(null);
 	const [modalOpen, setModalOpen] = useState(false);
 
@@ -16,6 +16,20 @@ function ProjectsMobile() {
 	const closeModal = () => {
 		setModalOpen(false);
 	};
+
+	useEffect(() => {
+		initScrollReveal();
+		// Ajoutez un écouteur d'événements pour redimensionner
+		const handleResize = () => {
+			initScrollReveal();
+		};
+		window.addEventListener('resize', handleResize);
+
+		// Nettoyez l'écouteur d'événements lors du démontage du composant
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
+	}, []);
 
 	console.log('projectData', ProjectsData);
 

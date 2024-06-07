@@ -101,7 +101,7 @@ function Projects() {
 											</div>
 											<div className="project-info-left" id="info">
 												<h2 className="titre-project">{project.nom}</h2>
-												<ul className="description-list-desktop">
+												<ul className="description-list-desktop margin-top10">
 													{project.description.map((desc, index) => (
 														<li key={index} className="description-item">
 															{desc}

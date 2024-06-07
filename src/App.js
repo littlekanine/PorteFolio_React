@@ -1,10 +1,10 @@
 import CustomRoutes from './component/routes/Routes';
 import { BrowserRouter as Router } from 'react-router-dom';
-import './styles.scss';
+import './sass/styles.scss';
 
 function App() {
 	return (
-		<div>
+		<div className="height-full">
 			<Router>
 				<CustomRoutes />
 			</Router>

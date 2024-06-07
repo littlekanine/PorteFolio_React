@@ -9,10 +9,6 @@
 	padding-bottom: 6%;
 	padding-top: 2%;
 
-	// @include respond(tab-land) {
-	// 	height: 100vh;
-	// }
-
 	@media (max-width: 900px) {
 		display: flex;
 		justify-content: center;
@@ -37,6 +33,10 @@
 			@include respond(tab-port-sm) {
 				padding-bottom: 2rem;
 			}
+
+			@media (max-width: 768px) {
+				padding-top: 2.5rem;
+			}
 		}
 		@media (max-width: 768px) {
 			padding-bottom: 2.5rem;
@@ -55,12 +55,17 @@
 				text-align: left;
 				color: black;
 				font-weight: bold;
+				padding: 5px;
 
 				@include respond(tab-port) {
 					text-align: left;
 				}
 				@include respond(tab-port-sm) {
 					text-align: center;
+				}
+
+				@media (max-width: 768px) {
+					font-size: 12px;
 				}
 
 				&--important {
