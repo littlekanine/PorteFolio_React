@@ -4,6 +4,7 @@ import ProjectsData from '../../../asset/projects.json';
 import Modal from './modalMobile/ModalMobile'; // Importez votre composant Modal
 
 function ProjectsMobile() {
+	console.log('im in mobile');
 	const [selectedProject, setSelectedProject] = useState(null);
 	const [modalOpen, setModalOpen] = useState(false);
 
@@ -16,9 +17,11 @@ function ProjectsMobile() {
 		setModalOpen(false);
 	};
 
+	console.log('projectData', ProjectsData);
+
 	return (
 		<>
-			<h2 className="section-title section-title-project dark-blue-text section-title-project-mobile">Projects</h2>;
+			<h2 className="section-title section-title-project dark-blue-text section-title-project-mobile">Projects</h2>
 			<Carousel>
 				{ProjectsData.map((project) => {
 					const imagePath = require(`../../../asset/img/${project.img}`);
