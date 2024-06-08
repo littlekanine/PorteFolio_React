@@ -19,7 +19,7 @@ export const Enveloppe = (props) => (
 );
 
 export const Sun = (props) => (
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props} fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
 		<circle cx="12" cy="12" r="5"></circle>
 		<line x1="12" y1="1" x2="12" y2="3"></line>
 		<line x1="12" y1="21" x2="12" y2="23"></line>
@@ -33,7 +33,7 @@ export const Sun = (props) => (
 );
 
 export const Moon = (props) => (
-	<svg fill="#000000" viewBox="0 0 352.726 352.726" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" style={{ width: '100%', height: '100%', color: 'blue' }}>
+	<svg fill="#000000" viewBox="0 0 352.726 352.726" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
 		<g style={{ textAlign: 'center' }}>
 			<g>
 				<g>

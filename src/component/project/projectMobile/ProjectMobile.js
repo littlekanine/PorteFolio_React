@@ -19,19 +19,15 @@ function ProjectsMobile() {
 
 	useEffect(() => {
 		initScrollReveal();
-		// Ajoutez un écouteur d'événements pour redimensionner
 		const handleResize = () => {
 			initScrollReveal();
 		};
 		window.addEventListener('resize', handleResize);
 
-		// Nettoyez l'écouteur d'événements lors du démontage du composant
 		return () => {
 			window.removeEventListener('resize', handleResize);
 		};
 	}, []);
-
-	console.log('projectData', ProjectsData);
 
 	return (
 		<>
