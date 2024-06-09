@@ -1,8 +1,13 @@
+import React, { useEffect } from 'react';
 import Pdp from '../../asset/img/mwa.jpg';
 
-function About() {
+function About({ darkMode }) {
+	useEffect(() => {
+		console.log('Dark mode is:', darkMode ? 'enabled' : 'disabled');
+	}, [darkMode]);
+
 	return (
-		<div>
+		<div className={`${darkMode ? ' dark-mode' : ''}`}>
 			<section id="about">
 				<div className="container">
 					<div className="row about-wrapper">

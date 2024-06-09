@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import skillsData from '../../asset/skills.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import IconMap from '../iconMap/IconMap';
 import getProgressWidth from './progressBar/ProgressBar';
 
-function CardsStack() {
+function CardsStack({ darkMode }) {
 	const chunkArray = (array, size) => {
 		const chunkedArr = [];
 		let index = 0;
@@ -17,8 +17,12 @@ function CardsStack() {
 
 	const chunkedSkills = chunkArray(skillsData, 3);
 
+	useEffect(() => {
+		console.log('Dark mode is:', darkMode ? 'enabled' : 'disabled');
+	}, [darkMode]);
+
 	return (
-		<div>
+		<div className={`${darkMode ? ' dark-mode' : ''}`}>
 			<section className="card-section">
 				<h1 className="section-title">Skills</h1>
 				{chunkedSkills.map((row, rowIndex) => (

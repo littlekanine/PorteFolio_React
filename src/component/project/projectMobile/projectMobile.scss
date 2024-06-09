@@ -57,9 +57,8 @@
 }
 
 .section-title-project-mobile {
-	@media (max-width: 768px) {
-		margin-top: 25px;
-	}
+	padding-top: 25px;
+	margin: 0 !important;
 }
 
 .react-responsive-3d-carousel__carousel__list {
@@ -126,3 +125,7 @@
 .react-responsive-3d-carousel__status {
 	display: none !important;
 }
+
+// .dark-mode {
+// 	background-color: #1a1a1a;
+// }

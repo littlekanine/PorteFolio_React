@@ -19,9 +19,9 @@ function Home() {
 		<div>
 			<div id="top"></div>
 			<Herro darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-			<About />
+			<About darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 			<ResponsiveProjects darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-			<CardsStack />
+			<CardsStack darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 			<ContactForm />
 			<Footer />
 		</div>

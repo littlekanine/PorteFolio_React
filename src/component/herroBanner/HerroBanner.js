@@ -2,14 +2,15 @@ import React from 'react';
 import { Moon, Sun } from '../svgComponent/SvgComponent';
 import Buttons from '../buttons/Buttons';
 import { ArrowLeft, ArrowRight } from '../svgComponent/SvgComponent';
-import useDarkMode from '../../scripts/darkMode';
 
 function Herro({ darkMode, toggleDarkMode }) {
 	return (
 		<div>
 			<section id="hero" className={`jumbotron ${darkMode ? 'dark-mode' : ''}`}>
 				<div className="animated-button toggle-button" onClick={toggleDarkMode}>
-					<button id="toggle-button">{darkMode ? <Sun /> : <Moon />}</button>
+					<button id="toggle-button" className="flex align-center center">
+						{darkMode ? <Sun /> : <Moon />}
+					</button>
 				</div>
 				<div className="container">
 					<h1 className="hero-title load-hidden">

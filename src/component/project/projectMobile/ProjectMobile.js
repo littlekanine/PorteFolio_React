@@ -4,7 +4,7 @@ import ProjectsData from '../../../asset/projects.json';
 import Modal from './modalMobile/ModalMobile'; // Importez votre composant Modal
 import initScrollReveal from '../../../scripts/scrollReveal';
 
-function ProjectsMobile() {
+function ProjectsMobile({ darkMode }) {
 	const [selectedProject, setSelectedProject] = useState(null);
 	const [modalOpen, setModalOpen] = useState(false);
 
@@ -29,8 +29,12 @@ function ProjectsMobile() {
 		};
 	}, []);
 
+	useEffect(() => {
+		console.log('Dark mode is:', darkMode ? 'enabled' : 'disabled');
+	}, [darkMode]);
+
 	return (
-		<>
+		<div className={`${darkMode ? ' dark-mode' : ''}`}>
 			<h2 className="section-title section-title-project dark-blue-text section-title-project-mobile">Projects</h2>
 			<Carousel>
 				{ProjectsData.map((project) => {
@@ -60,7 +64,7 @@ function ProjectsMobile() {
 					<Modal project={selectedProject} closeModal={closeModal} />
 				</div>
 			)}
-		</>
+		</div>
 	);
 }
 
