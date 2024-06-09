@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-3d-carousel';
 import ProjectsData from '../../../asset/projects.json';
 import Modal from './modalMobile/ModalMobile'; // Importez votre composant Modal
+import initScrollReveal from '../../../scripts/scrollReveal';
 
-function ProjectsMobile() {
-	console.log('im in mobile');
+function ProjectsMobile({ darkMode }) {
 	const [selectedProject, setSelectedProject] = useState(null);
 	const [modalOpen, setModalOpen] = useState(false);
 
@@ -17,10 +17,24 @@ function ProjectsMobile() {
 		setModalOpen(false);
 	};
 
-	console.log('projectData', ProjectsData);
+	useEffect(() => {
+		initScrollReveal();
+		const handleResize = () => {
+			initScrollReveal();
+		};
+		window.addEventListener('resize', handleResize);
+
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
+	}, []);
+
+	useEffect(() => {
+		console.log('Dark mode is:', darkMode ? 'enabled' : 'disabled');
+	}, [darkMode]);
 
 	return (
-		<>
+		<div className={`${darkMode ? ' dark-mode' : ''}`}>
 			<h2 className="section-title section-title-project dark-blue-text section-title-project-mobile">Projects</h2>
 			<Carousel>
 				{ProjectsData.map((project) => {
@@ -50,7 +64,7 @@ function ProjectsMobile() {
 					<Modal project={selectedProject} closeModal={closeModal} />
 				</div>
 			)}
-		</>
+		</div>
 	);
 }
 

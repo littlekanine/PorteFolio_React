@@ -1,0 +1,25 @@
+@import './vendors/bootstrap';
+
+@import './abstracts/mixins';
+@import './abstracts/variables';
+@import './abstracts/helpers';
+
+@import './base/base';
+@import './base/typography';
+
+@import '../component/buttons/buttons';
+@import '../component/project/projectDesktop/project';
+
+@import './layout/footer';
+@import './layout/sections';
+
+@import './sections/about';
+@import './sections/contact';
+@import './sections/hero';
+@import './sections/projects';
+@import '../component/cardsStack/cardsStacks.scss';
+@import '../component/cardsStack/progressBar/progressBar.scss';
+@import '../component/contactForm/contactForm.scss';
+@import '../component/project/projectMobile/projectMobile.scss';
+@import '../component//project//projectMobile/modalMobile/modalMobile.scss';
+@import '../pages/error.scss';

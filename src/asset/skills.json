@@ -2,22 +2,22 @@
 	{
 		"nom": "HTML",
 		"logo": "html5",
-		"niveaux": "medium"
+		"niveaux": "confirmed"
 	},
 	{
 		"nom": "CSS",
 		"logo": "css3",
-		"niveaux": "medium"
+		"niveaux": "confirmed"
 	},
 	{
 		"nom": "Javascript",
 		"logo": "js",
-		"niveaux": "beginner"
+		"niveaux": "medium"
 	},
 	{
 		"nom": "React",
 		"logo": "react",
-		"niveaux": "beginner"
+		"niveaux": "medium"
 	},
 	{
 		"nom": "MongoDB",

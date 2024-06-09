@@ -188,7 +188,6 @@
 		align-items: center;
 		flex-direction: column;
 		right: calc(100% + 10px);
-		text-align: left;
 	}
 
 	.item.clicked {
@@ -197,7 +196,7 @@
 		left: -70%;
 		transform: translate(-50%, -50%);
 		width: 40vw;
-		height: 30vh;
+		height: 35vh;
 		filter: inherit;
 		z-index: 100;
 		transform: none;

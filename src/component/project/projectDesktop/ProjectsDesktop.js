@@ -3,8 +3,7 @@ import ProjectsData from '../../../asset/projects.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import IconMap from '../../iconMap/IconMap';
 
-function Projects() {
-	console.log('im in web');
+function Projects({ darkMode }) {
 	const [expandedProjectId, setExpandedProjectId] = useState(null);
 
 	const handleProjectClick = (projectId) => {
@@ -39,9 +38,13 @@ function Projects() {
 		};
 	}, [expandedProjectId]);
 
+	useEffect(() => {
+		console.log('Dark mode is:', darkMode ? 'enabled' : 'disabled');
+	}, [darkMode]);
+
 	return (
 		<div>
-			<section id="projects">
+			<section id="projects" className={`projects${darkMode ? ' dark-mode' : ''}`}>
 				<div className="container">
 					<div className="project-wrapper">
 						<h2 className="section-title dark-blue-text section-title-project">Projects</h2>
@@ -101,7 +104,7 @@ function Projects() {
 											</div>
 											<div className="project-info-left" id="info">
 												<h2 className="titre-project">{project.nom}</h2>
-												<ul className="description-list-desktop">
+												<ul className="description-list-desktop margin-top10">
 													{project.description.map((desc, index) => (
 														<li key={index} className="description-item">
 															{desc}

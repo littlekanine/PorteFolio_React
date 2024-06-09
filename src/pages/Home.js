@@ -2,34 +2,28 @@ import React, { useEffect } from 'react';
 import initScrollReveal from '../scripts/scrollReveal';
 import Herro from '../component/herroBanner/HerroBanner';
 import About from '../component/about/About';
-// import Projects from '../component/project/projectDesktop/Projects';
 import ContactForm from '../component/contactForm/ContactForm';
 import CardsStack from '../component/cardsStack/CardsStacks';
 import ResponsiveProjects from '../component/project/ResponsiveProjects';
+import Footer from '../component/footer/Footer';
+import useDarkMode from '../scripts/darkMode';
 
 function Home() {
 	useEffect(() => {
 		initScrollReveal();
 	}, []);
+
+	const [darkMode, toggleDarkMode] = useDarkMode();
+
 	return (
 		<div>
 			<div id="top"></div>
-			<Herro />
-			<About />
-			<ResponsiveProjects />
-			<CardsStack />
+			<Herro darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+			<About darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+			<ResponsiveProjects darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+			<CardsStack darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 			<ContactForm />
-
-			<footer className="footer navbar-static-bottom">
-				<div className="container">
-					<p className="footer__text">
-						<a rel="noreferrer" href="https://github.com/littlekanine" target="_blank">
-							Elia Kopff
-						</a>
-					</p>
-					<p className="footer__text">2024</p>
-				</div>
-			</footer>
+			<Footer />
 		</div>
 	);
 }

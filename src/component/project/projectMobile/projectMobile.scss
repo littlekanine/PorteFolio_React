@@ -1,3 +1,44 @@
+.carousel-container {
+	perspective: 1000px;
+	margin: 0 auto;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.carousel {
+	display: flex;
+	transform-style: preserve-3d;
+	transform: translateZ(-300px);
+	width: 100%;
+	transition: transform 1s;
+}
+
+.carousel-item {
+	flex: 0 0 auto;
+	width: 200px;
+	height: 300px;
+	margin: 20px;
+	transition: transform 1s, opacity 1s;
+	transform-origin: center center -300px;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 10px;
+	}
+}
+
+.carousel:hover .carousel-item {
+	opacity: 0.5;
+}
+
+.carousel-item:hover {
+	opacity: 1;
+	transform: scale(1.2);
+}
+
 .react-responsive-3d-carousel__carousel__item.shadow {
 	display: flex !important;
 	justify-content: center !important;
@@ -10,18 +51,14 @@
 	opacity: 1;
 }
 
-.react-responsive-3d-carousel__arrows.right {
-	display: none;
-}
-
+.react-responsive-3d-carousel__arrows.right,
 .react-responsive-3d-carousel__arrows.left {
 	display: none;
 }
 
 .section-title-project-mobile {
-	@media (max-width: 768px) {
-		margin-top: 25px;
-	}
+	padding-top: 25px;
+	margin: 0 !important;
 }
 
 .react-responsive-3d-carousel__carousel__list {
@@ -71,6 +108,7 @@
 	padding: 10px !important;
 	border-radius: 25px !important;
 }
+
 .shadow {
 	box-shadow: none !important;
 }
@@ -87,3 +125,7 @@
 .react-responsive-3d-carousel__status {
 	display: none !important;
 }
+
+// .dark-mode {
+// 	background-color: #1a1a1a;
+// }

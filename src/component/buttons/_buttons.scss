@@ -20,7 +20,6 @@
 	animation: button 2s forwards;
 	animation-delay: 1s;
 	opacity: 0;
-
 	svg {
 		position: absolute;
 		width: 24px;
@@ -200,7 +199,6 @@
 	&:hover {
 		color: $secondary-color;
 		text-decoration: none;
-
 		&::after {
 			width: 100%;
 		}
@@ -210,4 +208,20 @@
 /* Arrow Button */
 .up i {
 	color: #272727;
+}
+
+.dark-mode .animated-button {
+	box-shadow: 0 0 0 2px white !important;
+}
+
+.dark-mode .animated-button:hover {
+	box-shadow: none !important;
+	color: black !important;
+	& svg {
+		fill: black !important;
+	}
+}
+
+.dark-mode .animated-button svg {
+	fill: #f0f0f0;
 }
