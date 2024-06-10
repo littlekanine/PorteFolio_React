@@ -32,8 +32,8 @@ function CardsStack({ darkMode }) {
 								<div className="card flex center align-center">
 									<h2 className="title-stack">{skill.nom}</h2>
 									<FontAwesomeIcon key={index} icon={IconMap[skill.logo]} className="icons-skill" />
-									<div className="progress-bar flex center align-center">
-										<div className="progress skills-progress" style={{ width: getProgressWidth(skill.niveaux) }}></div>
+									<div className="progress-bar flex center align-center opacity visible">
+										<div className="progress skills-progress visible opacity" style={{ width: getProgressWidth(skill.niveaux) }}></div>
 									</div>
 								</div>
 							</div>
