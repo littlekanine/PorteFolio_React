@@ -10,10 +10,6 @@
 }
 
 .card-stack {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: row;
 	margin-bottom: 50px;
 	gap: 40px;
 	@media (max-width: 768px) {
@@ -21,18 +17,8 @@
 	}
 }
 
-.card-contain {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-weight: bold;
-}
-
 .card {
 	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	width: 200px;
 	height: 125px;
 	border: 0px;

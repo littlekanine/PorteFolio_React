@@ -48,8 +48,8 @@ function Projects({ darkMode }) {
 				<div className="container">
 					<div className="project-wrapper">
 						<h2 className="section-title dark-blue-text section-title-project">Projects</h2>
-						<div className="wrapper">
-							<div className="items section-project load-hidden" id="project-items">
+						<div className="flex center align-center">
+							<div className="items flex section-project load-hidden" id="project-items">
 								{ProjectsData.map((project) => {
 									const imagePath = require(`../../../asset/img/${project.img}`);
 									const isClicked = project.id === expandedProjectId;
@@ -64,9 +64,9 @@ function Projects({ darkMode }) {
 											aria-label={project.nom}
 											data-project-id={project.id}
 										>
-											<div className="project-info" id="info">
+											<div className="project-info flex center align-center column" id="info">
 												<h2>Language used </h2>
-												<div className="language-icons">
+												<div className="language-icons flex center">
 													{(project.langages || []).map((lang, index) => (
 														<FontAwesomeIcon key={index} icon={IconMap[lang]} />
 													))}
@@ -102,7 +102,7 @@ function Projects({ darkMode }) {
 													</div>
 												</div>
 											</div>
-											<div className="project-info-left" id="info">
+											<div className="project-info-left flex center align-center column" id="info">
 												<h2 className="titre-project">{project.nom}</h2>
 												<ul className="description-list-desktop margin-top10">
 													{project.description.map((desc, index) => (

@@ -13,10 +13,9 @@
 @import './layout/footer';
 @import './layout/sections';
 
-@import './sections/about';
+@import '../component/about/about';
 @import './sections/contact';
 @import './sections/hero';
-@import './sections/projects';
 @import '../component/cardsStack/cardsStacks.scss';
 @import '../component/cardsStack/progressBar/progressBar.scss';
 @import '../component/contactForm/contactForm.scss';

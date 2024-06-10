@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import IconMap from '../../../iconMap/IconMap';
 
-function Modal({ project, closeModal }) {
+function Modal({ project, closeModal, darkMode }) {
 	const [isOpen, setIsOpen] = useState(false);
 
 	useEffect(() => {
@@ -18,9 +18,13 @@ function Modal({ project, closeModal }) {
 
 	const imagePath = require(`../../../../asset/img/${project.img}`);
 
+	useEffect(() => {
+		console.log('Dark mode is:', darkMode ? 'enabled' : 'disabled');
+	}, [darkMode]);
+
 	return (
 		<div className={`modal-overlay ${isOpen ? 'modal-open' : ''}`}>
-			<div className="modal">
+			<div className={`modal${darkMode ? ' dark-mode' : ''}`}>
 				<div className="modal-content">
 					<div className="modal-header">
 						<h2 className="title-modal section-title-project">{project.nom}</h2>

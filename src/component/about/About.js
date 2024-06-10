@@ -17,7 +17,7 @@ function About({ darkMode }) {
 							</div>
 						</div>
 						<div className="col-md-6 col-sm-12">
-							<div className="about-wrapper__info load-hidden">
+							<div className="about-wrapper__info load-hidden flex center column">
 								<p className="about-wrapper__info-text">
 									Former bartender, I chose to reorient myself after seven years of service.
 									<p className="about-wrapper__info-text">I want to create, improve, undertake.</p>

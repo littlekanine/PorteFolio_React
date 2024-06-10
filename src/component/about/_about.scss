@@ -10,9 +10,6 @@
 	padding-top: 2%;
 
 	@media (max-width: 900px) {
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		clip-path: none;
 	}
 
@@ -22,10 +19,7 @@
 		}
 
 		&__image {
-			display: flex;
 			height: 100%;
-			align-items: center;
-			justify-content: center;
 
 			@include respond(tab-land) {
 				height: 100%;
@@ -42,10 +36,7 @@
 			padding-bottom: 2.5rem;
 		}
 		&__info {
-			display: flex;
 			height: 100%;
-			justify-content: center;
-			flex-direction: column;
 
 			@include respond(tab-port-sm) {
 				align-items: center;

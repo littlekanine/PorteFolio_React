@@ -26,13 +26,13 @@ function CardsStack({ darkMode }) {
 			<section className="card-section">
 				<h1 className="section-title">Skills</h1>
 				{chunkedSkills.map((row, rowIndex) => (
-					<div className="card-stack section-cardStacks load-hidden" key={rowIndex}>
+					<div className="card-stack section-cardStacks load-hidden flex center align-center rowx" key={rowIndex}>
 						{row.map((skill, index) => (
-							<div className="card-contain " key={index}>
-								<div className="card">
+							<div className="card-contain flex center align-center bold" key={index}>
+								<div className="card flex center align-center">
 									<h2 className="title-stack">{skill.nom}</h2>
 									<FontAwesomeIcon key={index} icon={IconMap[skill.logo]} className="icons-skill " />
-									<div className="progress-bar">
+									<div className="progress-bar flex center align-center">
 										<div className="progress skills-progress load-hidden" style={{ width: getProgressWidth(skill.niveaux) }}></div>
 									</div>
 								</div>
