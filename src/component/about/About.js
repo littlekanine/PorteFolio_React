@@ -1,12 +1,7 @@
 import React, { useEffect } from 'react';
 import Pdp from '../../asset/img/mwa.jpg';
-import initScrollReveal from '../../scripts/scrollReveal';
 
 function About({ darkMode }) {
-	useEffect(() => {
-		initScrollReveal();
-	}, []);
-
 	useEffect(() => {
 		console.log('Dark mode is:', darkMode ? 'enabled' : 'disabled');
 	}, [darkMode]);

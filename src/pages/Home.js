@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import initScrollReveal from '../scripts/scrollReveal';
 import Herro from '../component/herroBanner/HerroBanner';
 import About from '../component/about/About';
 import ContactForm from '../component/contactForm/ContactForm';
@@ -9,10 +8,6 @@ import Footer from '../component/footer/Footer';
 import useDarkMode from '../scripts/darkMode';
 
 function Home() {
-	useEffect(() => {
-		initScrollReveal();
-	}, []);
-
 	const [darkMode, toggleDarkMode] = useDarkMode();
 
 	return (

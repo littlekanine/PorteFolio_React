@@ -3,13 +3,8 @@ import skillsData from '../../data/projectsData/skills.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import IconMap from '../iconMap/IconMap';
 import getProgressWidth from './progressBar/ProgressBar';
-import initScrollReveal from '../../scripts/scrollReveal';
 
 function CardsStack({ darkMode }) {
-	useEffect(() => {
-		initScrollReveal();
-	}, []);
-
 	const chunkArray = (array, size) => {
 		const chunkedArr = [];
 		let index = 0;

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-3d-carousel';
 import ProjectsData from '../../../data/projectsData/projects.json';
 import Modal from './modalMobile/ModalMobile';
-import initScrollReveal from '../../../scripts/scrollReveal';
 
 function ProjectsMobile({ darkMode }) {
 	const [selectedProject, setSelectedProject] = useState(null);
@@ -16,18 +15,6 @@ function ProjectsMobile({ darkMode }) {
 	const closeModal = () => {
 		setModalOpen(false);
 	};
-
-	useEffect(() => {
-		initScrollReveal();
-		const handleResize = () => {
-			initScrollReveal();
-		};
-		window.addEventListener('resize', handleResize);
-
-		return () => {
-			window.removeEventListener('resize', handleResize);
-		};
-	}, []);
 
 	useEffect(() => {
 		console.log('Dark mode is:', darkMode ? 'enabled' : 'disabled');
