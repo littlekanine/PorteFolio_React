@@ -4,6 +4,7 @@ export const defaultProps = {
 	duration: 1000,
 	desktop: true,
 	mobile: true,
+	reset: false,
 };
 
 export const targetElements = [
@@ -37,6 +38,9 @@ export const targetElements = [
 		animation: {
 			delay: 600,
 			distance: '0px',
+			origin: 'top',
+			opacity: 1,
+			visibility: 'visible',
 		},
 	},
 	{
