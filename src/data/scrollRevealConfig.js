@@ -37,7 +37,6 @@ export const targetElements = [
 		animation: {
 			delay: 600,
 			distance: '0px',
-			origin: 'bottom',
 		},
 	},
 	{
@@ -102,7 +101,6 @@ export const targetElements = [
 			delay: 800,
 			origin: window.innerWidth > 768 ? 'left' : 'right',
 			duration: 1000,
-			opacity: 1,
 		},
 	},
 ];
