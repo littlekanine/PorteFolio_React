@@ -18,7 +18,7 @@ export const targetElements = [
 	{
 		element: '.section-title-project',
 		animation: {
-			delay: 2000,
+			delay: 300,
 			distance: '0px',
 			origin: 'bottom',
 		},
@@ -26,7 +26,7 @@ export const targetElements = [
 	{
 		element: '.section-project',
 		animation: {
-			delay: 2500,
+			delay: 600,
 			distance: '0px',
 			origin: 'bottom',
 		},
@@ -35,7 +35,7 @@ export const targetElements = [
 	{
 		element: '.section-cardStacks',
 		animation: {
-			delay: 1000,
+			delay: 600,
 			distance: '0px',
 			origin: 'bottom',
 		},
@@ -85,14 +85,14 @@ export const targetElements = [
 	{
 		element: '.project-wrapper__image',
 		animation: {
-			delay: 1000,
+			delay: 600,
 			origin: window.innerWidth > 768 ? 'right' : 'bottom',
 		},
 	},
 	{
 		element: '.contact-wrapper',
 		animation: {
-			delay: 800,
+			delay: 600,
 			origin: 'bottom',
 		},
 	},

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ProjectsData from '../../../asset/projects.json';
+import ProjectsData from '../../../data/projectsData/projects.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import IconMap from '../../iconMap/IconMap';
 
@@ -49,7 +49,7 @@ function Projects({ darkMode }) {
 					<div className="project-wrapper">
 						<h2 className="section-title dark-blue-text section-title-project">Projects</h2>
 						<div className="flex center align-center">
-							<div className="items flex section-project load-hidden" id="project-items">
+							<div className="items flex section-project" id="project-items">
 								{ProjectsData.map((project) => {
 									const imagePath = require(`../../../asset/img/${project.img}`);
 									const isClicked = project.id === expandedProjectId;

@@ -12,12 +12,12 @@ function About({ darkMode }) {
 				<div className="container">
 					<div className="row about-wrapper">
 						<div className="col-md-6 col-sm-12 img-about">
-							<div className="about-wrapper__image load-hidden">
+							<div className="about-wrapper__image">
 								<img src={Pdp} alt="Elia Kopff" className="img-fluid rounded shadow-lg" />
 							</div>
 						</div>
 						<div className="col-md-6 col-sm-12">
-							<div className="about-wrapper__info load-hidden flex center column">
+							<div className="about-wrapper__info flex center column">
 								<p className="about-wrapper__info-text">
 									Former bartender, I chose to reorient myself after seven years of service.
 									<p className="about-wrapper__info-text">I want to create, improve, undertake.</p>

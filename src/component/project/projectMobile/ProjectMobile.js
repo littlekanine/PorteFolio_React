@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-3d-carousel';
-import ProjectsData from '../../../asset/projects.json';
-import Modal from './modalMobile/ModalMobile'; // Importez votre composant Modal
+import ProjectsData from '../../../data/projectsData/projects.json';
+import Modal from './modalMobile/ModalMobile';
 import initScrollReveal from '../../../scripts/scrollReveal';
 
 function ProjectsMobile({ darkMode }) {
@@ -40,7 +40,7 @@ function ProjectsMobile({ darkMode }) {
 				{ProjectsData.map((project) => {
 					const imagePath = require(`../../../asset/img/${project.img}`);
 					return (
-						<div className="carrousel section-project load-hidden" key={project.id}>
+						<div className="carrousel section-project" key={project.id}>
 							<div className="carrousel-list">
 								<div className="carousel-item shadow" onClick={() => openModal(project)} role="button" tabIndex="0">
 									<img
