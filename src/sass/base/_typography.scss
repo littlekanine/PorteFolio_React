@@ -29,6 +29,9 @@ a:hover {
 	font-weight: bold;
 	text-transform: uppercase;
 	color: black;
+	visibility: visible !important;
+	opacity: 1 !important;
+	transition: none !important;
 
 	@include respond(phone) {
 		font-size: 2.8rem;

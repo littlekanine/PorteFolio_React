@@ -5,7 +5,7 @@ function ContactForm() {
 	return (
 		<div>
 			<section id="contact" className="form">
-				<h1 className="section-title">Contact</h1>
+				<h1 className="section-title visible opacity">Contact</h1>
 				<div className="form-button">
 					<a rel="noreferrer" className="animated-button" href="mailto:elia.kopff3891@gmail.com">
 						<Buttons className="animated-button" message={'If you would like to contact me'} SvgRight={ArrowRight} SvgEnvellope={Enveloppe} />
