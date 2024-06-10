@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Herro from '../component/herroBanner/HerroBanner';
 import About from '../component/about/About';
 import ContactForm from '../component/contactForm/ContactForm';
