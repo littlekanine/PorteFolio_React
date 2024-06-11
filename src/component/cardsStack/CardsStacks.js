@@ -22,7 +22,7 @@ function CardsStack({ darkMode }) {
 	}, [darkMode]);
 
 	return (
-		<div className={`flex column${darkMode ? 'dark-mode' : ''}`}>
+		<div className={`flex column ${darkMode ? 'dark-mode' : ''}`}>
 			<section className="card-section flex column">
 				<h1 className="section-title opacity visible">Skills</h1>
 				{chunkedSkills.map((row, rowIndex) => (
