@@ -8,7 +8,7 @@ function Herro({ darkMode, toggleDarkMode }) {
 		<div>
 			<section id="hero" className={`jumbotron ${darkMode ? 'dark-mode' : ''}`}>
 				<div className="animated-button toggle-button" onClick={toggleDarkMode}>
-					<button id="toggle-button" className="flex align-center center">
+					<button id="toggle-button" className="flex align-center center" aria-label="button dark mode">
 						{darkMode ? <Sun /> : <Moon />}
 					</button>
 				</div>
