@@ -101,12 +101,10 @@
 }
 
 .items {
-	z-index: 1;
 	gap: 0.4rem;
 	perspective: calc(var(--index) * 35);
 
 	.item {
-		z-index: 9999;
 		width: calc(var(--index) * 5);
 		height: calc(var(--index) * 12);
 		background-color: #222;
