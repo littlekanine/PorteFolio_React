@@ -32,15 +32,18 @@ function About({ darkMode }) {
 						</div>
 					</div>
 					<div className="social-links about-wrapper__link">
-						<a href="https://www.linkedin.com/in/elia-kopff-16064b228/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=fr">
+						<a
+							href="https://www.linkedin.com/in/elia-kopff-16064b228/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=fr"
+							aria-label="link to my Linkedin account"
+						>
 							<span className="text-hidden">Lien linkedin</span>
 							<i className="fab fa-linkedin fa-inverse icon"></i>
 						</a>
-						<a href="https://github.com/littlekanine">
+						<a href="https://github.com/littlekanine" aria-label="link to my Github">
 							<span className="text-hidden">Lien GitHub</span>
 							<i className="fab fa-brands fa-github icon"></i>
 						</a>
-						<a href="https://x.com/K_D3828">
+						<a href="https://x.com/K_D3828" aria-label="link to my X account">
 							<span className="text-hidden">Lien X</span>
 							<i className="fab fa-brands fa-x-twitter icon"></i>
 						</a>
