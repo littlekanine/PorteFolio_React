@@ -83,6 +83,8 @@
 .img-fluid {
 	height: auto !important;
 	width: 300px !important;
+	border-radius: 25px !important;
+	filter: drop-shadow(2px 4px 6px black);
 
 	@media (max-width: 768px) {
 		width: 150px !important;

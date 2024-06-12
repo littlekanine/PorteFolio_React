@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Pdp from '../../asset/img/mwa.jpg';
+import Pdp from '../../asset/img/mwa2.jpg';
 
 function About({ darkMode }) {
 	useEffect(() => {
