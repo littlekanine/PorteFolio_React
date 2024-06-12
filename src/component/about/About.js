@@ -19,7 +19,7 @@ function About({ darkMode }) {
 						<div className="col-md-6 col-sm-12">
 							<div className="about-wrapper__info flex center column">
 								<p className="about-wrapper__info-text">
-									Anciennement barman, j'ai choisi de me réorienter après six ans dans la restauration.
+									Ancien barman, j'ai choisi de me réorienter après six ans dans la restauration.
 									<p className="about-wrapper__info-text">Je veux créer, améliorer, entreprendre.</p>
 								</p>
 								<p className="about-wrapper__info-text">
