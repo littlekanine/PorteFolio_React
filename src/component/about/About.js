@@ -19,15 +19,15 @@ function About({ darkMode }) {
 						<div className="col-md-6 col-sm-12">
 							<div className="about-wrapper__info flex center column">
 								<p className="about-wrapper__info-text">
-									Former bartender, I chose to reorient myself after seven years of service.
-									<p className="about-wrapper__info-text">I want to create, improve, undertake.</p>
+									Anciennement barman, j'ai choisi de me réorienter après six ans dans la restauration.
+									<p className="about-wrapper__info-text">Je veux créer, améliorer, entreprendre.</p>
 								</p>
 								<p className="about-wrapper__info-text">
-									I am starting to train on the back end, with the aim of becoming full stack. I would like to work in application creation and
-									development
+									Je commence à m'entraîner sur le back-end, dans le but de devenir full stack. J'aimerais travailler dans la création
+									d'applications
 								</p>
-								<p className="about-wrapper__info-text">I am motivated and attentive. I look forward to collaborating with you.</p>
-								<p className="about-wrapper__info-text">Curiosity brings knowledge</p>
+								<p className="about-wrapper__info-text">Je suis motivé et attentif. J'ai hâte de collaborer avec vous.</p>
+								<p className="about-wrapper__info-text">La curiosité apporte la connaissance</p>
 							</div>
 						</div>
 					</div>

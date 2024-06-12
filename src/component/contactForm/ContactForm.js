@@ -8,7 +8,7 @@ function ContactForm() {
 				<h1 className="section-title visible opacity">Contact</h1>
 				<div className="form-button">
 					<a rel="noreferrer" className="animated-button" href="mailto:elia.kopff3891@gmail.com">
-						<Buttons className="animated-button" message={'If you would like to contact me'} SvgRight={ArrowRight} SvgEnvellope={Enveloppe} />
+						<Buttons className="animated-button" message={'Si vous souhaitez me contacter !'} SvgRight={ArrowRight} SvgEnvellope={Enveloppe} />
 					</a>
 				</div>
 			</section>
