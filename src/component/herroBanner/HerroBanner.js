@@ -18,7 +18,7 @@ function Herro({ darkMode, toggleDarkMode }) {
 						<br />
 						Je m'appelle <span className="text-color-main">Elia Kopff</span>
 						<br />
-						Je suis dévellopeur Web.
+						Je suis développeur Web.
 					</h1>
 					<div className="hero-cta load-hidden">
 						<a rel="noreferrer" className={`animated-button ${darkMode ? 'dark-mode' : ''}`} href="#about">
